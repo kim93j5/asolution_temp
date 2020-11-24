@@ -98,9 +98,9 @@ public class Step1 {
     // 09 사칙연산 ( A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램)
     public static void Q9(){
 
-        Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
         System.out.println(a+b);
         System.out.println(a-b);
@@ -113,10 +113,10 @@ public class Step1 {
     //10
     public static void Q10(){
 
-        Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
 
         System.out.println((a+b)%c);
         System.out.println((a*b)%c);
@@ -127,12 +127,12 @@ public class Step1 {
 
     //11
     public static void Q11() {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        int a = in.nextInt();
-        int b = in.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
-        in.close();
+        sc.close();
 
         System.out.println(a*(b%10));
         System.out.println(a*(b%100/10));
