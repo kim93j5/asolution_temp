@@ -5,26 +5,16 @@ import java.util.Scanner;
 public class Step2 {
 
     public static void main(String[] args) {
-//     Q1();
-//     Q2();
-//     Q3();
-     Q4();
+//     Q1(1,2);
+//     Q2(30);
+//     Q3(2020);
+//     Q4(-2, 3);
 //     Q5();
-//     Q6();
-//     Q7();
-//     Q8();
-//     Q9();
-//     Q10();
-//     Q11();
+
     }
 
     // 01 두 정수 A와 B가 주어졌을 때, A와 B를 비교하는 프로그램을 작성하시오.
-    public static void Q1() {
-        int a,b;
-
-        Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        b = sc.nextInt();
+    public static void Q1(int a, int b) {
 
         if (a > b) {
             System.out.print(">");
@@ -41,10 +31,7 @@ public class Step2 {
     // 02 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오.
     // 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F를 출력하는 프로그램을 작성하시오.
 
-    public static void Q2() {
-
-        Scanner sc = new Scanner(System.in);
-        int score = sc.nextInt();
+    public static void Q2(int score) {
 
         if (90 <= score && score<= 100) {
             System.out.print("A");
@@ -69,10 +56,7 @@ public class Step2 {
     예를 들어, 2012년은 4의 배수이면서 100의 배수가 아니라서 윤년이다. 1900년은 100의 배수이고 400의 배수는 아니기 때문에 윤년이 아니다. 하지만, 2000년은 400의 배수이기 때문에 윤년이다.
    */
 
-  public static void Q3() {
-
-      Scanner sc = new Scanner(System.in);
-      int leapYear =  sc.nextInt();
+  public static void Q3(int leapYear) {
 
       if (leapYear % 4 == 0 && leapYear % 400 == 0) {
             System.out.print("1");
@@ -90,12 +74,7 @@ public class Step2 {
      * -- > Quadrant 3
      * +- > Quadrant 4
      */
-    public static void Q4() {
-        int a, b ;
-
-        Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();;
-        b = sc.nextInt();;
+    public static void Q4(int a , int b) {
 
         if (a > 0 && b > 0) {
             System.out.print("1");
@@ -120,11 +99,7 @@ public class Step2 {
      이 방법은 단순하다. 원래 설정되어 있는 알람을 45분 앞서는 시간으로 바꾸는 것이다. 어차피 알람 소리를 들으면, 알람을 끄고 조금 더 잘 것이기 때문이다. 이 방법을 사용하면, 매일 아침 더 잤다는 기분을 느낄 수 있고, 학교도 지각하지 않게 된다.
      현재 상근이가 설정한 알람 시각이 주어졌을 때, 창영이의 방법을 사용한다면, 이를 언제로 고쳐야 하는지 구하는 프로그램을 작성하시오.
       */
-    public static void Q5() {
-        Scanner sc = new Scanner(System.in);
-
-        int hour = sc.nextInt();
-        int min = sc.nextInt();
+    public static void Q5(int hour, int min) {
 
         if (min < 45) {
             hour--;

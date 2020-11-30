@@ -49,58 +49,31 @@ public class Step1 {
     }
 
     // 05 A+B
-    public static void Q5() {
-        int a, b;
-
-        Scanner sc = new Scanner(System.in);
-        a = sc.nextInt();
-        b = sc.nextInt();
+    public static void Q5(int a, int b  ) {
 
         System.out.print(a+b);
     }
 
     // 06 A-B
-    public static void Q6() {
-        int a,b;
-
-        Scanner sc = new Scanner((System.in));
-
-        a = sc.nextInt();
-        b = sc.nextInt();
+    public static void Q6(int a, int b) {
 
         System.out.print(a-b);
     }
 
     // 07 A*B
-    public static void Q7() {
-        int a,b;
-
-        Scanner sc = new Scanner((System.in));
-
-        a = sc.nextInt();
-        b = sc.nextInt();
+    public static void Q7(int a, int b) {
 
         System.out.print(a*b);
     }
 
     // 08 A/B
-    public static void Q8() {
-        double a,b;
-
-        Scanner sc = new Scanner((System.in));
-
-        a = sc.nextDouble();
-        b = sc.nextDouble();
+    public static void Q8(double a, double b) {
 
         System.out.print(a*b);
     }
 
     // 09 사칙연산 ( A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램)
-    public static void Q9(){
-
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+    public static void Q9(int a, int b){
 
         System.out.println(a+b);
         System.out.println(a-b);
@@ -111,12 +84,7 @@ public class Step1 {
     }
 
     //10
-    public static void Q10(){
-
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+    public static void Q10(int a, int b, int c){
 
         System.out.println((a+b)%c);
         System.out.println((a*b)%c);
@@ -126,13 +94,7 @@ public class Step1 {
     }
 
     //11
-    public static void Q11() {
-        Scanner sc = new Scanner(System.in);
-
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-
-        sc.close();
+    public static void Q11(int a, int b) {
 
         System.out.println(a*(b%10));
         System.out.println(a*(b%100/10));
