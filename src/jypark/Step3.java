@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Step3 {
 
     public static void main(String[] args) {
-     Q1(2);
+//     Q1(2);
 //     Q2();
-//     Q3();
+     Q3(3);
 //     Q4();
 //     Q5();
 //     Q6();
@@ -30,7 +30,18 @@ public class Step3 {
     // 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
     public static void Q2() {
 
+    }
 
+    // n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
+    public static void Q3(int n) {
+
+        int sum = 0;
+
+        for (int i=0; i <=n; i++){
+            sum += i;
+        }
+
+        System.out.print(sum);
     }
 
 
