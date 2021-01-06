@@ -52,31 +52,9 @@ public class Step4 {
     }
 
 
-    // 더하기 사이클 (scanner)
-    public static void Q2() {
-        Scanner sc = new Scanner(System.in);
 
-        int N = sc.nextInt();
-        int N2 = N;
-        int count = 0;
 
-        while(true) {
-          //tens
-          int tens = (N % 10)*10;
-          int units = (N/10 +N %10)%10;
-            System.out.println("tens :" + tens);
-            System.out.println("units :" + units);
 
-          N = ((N % 10)*10 + (((N/10) + (N % 10)) % 10));
-            System.out.println(N);
-          count ++;
-
-          if (N2 == N) {
-              break;
-          }
-        }
-        System.out.println("count:"+count);
-    }
 
     public static void Q3() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
